@@ -1,0 +1,15 @@
+spring:
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/java?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: mysql
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
